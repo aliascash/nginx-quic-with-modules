@@ -4,7 +4,7 @@ Nginx image based on https://github.com/yurymuski/nginx-http3 with additional mo
 - https://github.com/lyokha/nginx-custom-counters-module
 - https://github.com/openresty/echo-nginx-module
 
-Based on ubuntu:18.04
+
 
 # Licensing
 
@@ -26,10 +26,10 @@ docker run \
     -p 443:443/udp \
     -v /etc/letsencrypt/:/opt/nginx/certs/ \
     -v /opt/nginx/conf/example.nginx.conf:/etc/nginx/nginx.conf \
-    ymuski/nginx-quic
+    aliascash/nginx-quic
 ```
 
-### Checking
+# Checking
 
 ```
 docker run \
