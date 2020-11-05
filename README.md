@@ -6,7 +6,14 @@ Nginx image based on https://github.com/yurymuski/nginx-http3 with additional mo
 
 Based on ubuntu:18.04
 
-### usage
+# Licensing
+
+- SPDX-FileCopyrightText: © 2020 Alias Developers
+- SPDX-License-Identifier: MIT
+
+
+
+# Usage
 - Get certs from certbot in /etc/letsencrypt/
 - Create nginx.conf like in example
 

@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: © 2020 Alias Developers
+#
+# SPDX-License-Identifier: MIT
+
 FROM ubuntu:18.04 AS builder
 LABEL maintainer="HLXEasy <hlxeasy@gmail.com>"
 
