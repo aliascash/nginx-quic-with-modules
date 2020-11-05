@@ -54,3 +54,7 @@ FROM ymuski/nginx-quic:latest
 COPY --from=builder /opt/ngx_http_custom_counters_module.so /usr/lib/nginx/modules/
 COPY --from=builder /opt/ngx_http_echo_module.so            /usr/lib/nginx/modules/
 #COPY example.nginx.conf                                     /etc/nginx/nginx.conf
+
+RUN mkdir -p /etc/nginx/modules-enabled/ \
+ && echo "load_module /usr/lib/nginx/modules/ngx_http_custom_counters_module.so;" > /etc/nginx/modules-enabled/50-mod-http-custom-counters.conf \
+ && echo "load_module /usr/lib/nginx/modules/ngx_http_echo_module.so;" >            /etc/nginx/modules-enabled/50-mod-http-echo.conf
